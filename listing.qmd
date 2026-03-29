@@ -46,7 +46,7 @@ venue <- ifelse(
 pubmed_badge <- ifelse(
   is.na(refs$pubmed) == FALSE & nchar(refs$pubmed) > 0,
   sprintf(
-    '<a href="%s" target="_blank" style="margin-left:0.6em; color:%s; font-size:1.2em;"><i class="ai ai-pubmed"></i></a>',
+    '<a href="%s" target="_blank" style="margin-left:0.0em; color:%s; font-size:1.2em;"><i class="ai ai-pubmed"></i></a>',
     refs$pubmed, ic_col
   ),
   ""
@@ -55,7 +55,7 @@ pubmed_badge <- ifelse(
 scholar_badge <- ifelse(
   is.na(refs$scholar) == FALSE & nchar(refs$scholar) > 0,
   sprintf(
-    '<a href="%s" target="_blank" style="margin-left:0.6em; color:%s; font-size:1.2em;"><i class="ai ai-google-scholar"></i></a>',
+    '<a href="%s" target="_blank" style="margin-left:0.0em; color:%s; font-size:1.2em;"><i class="ai ai-google-scholar"></i></a>',
     refs$scholar, ic_col
   ),
   ""
@@ -64,7 +64,7 @@ scholar_badge <- ifelse(
 pdf_badge <- ifelse(
   is.na(refs$pdf) == FALSE & nchar(refs$pdf) > 0,
   sprintf(
-    '<a href="%s" target="_blank" style="margin-left:0.8em; color:#fff; background:%s; font-size:0.75em; font-weight:bold; padding:0.15em 0.45em; border-radius:3px; text-decoration:none; vertical-align:middle;">PDF</a>',
+    '<a href="%s" target="_blank" style="margin-left:0.0em; color:#fff; background:%s; font-size:0.75em; font-weight:bold; padding:0.15em 0.45em; border-radius:3px; text-decoration:none; vertical-align:middle;">PDF</a>',
     refs$pdf, ic_col
   ),
   ""
@@ -82,14 +82,14 @@ doi_badge <- ifelse(
 details_badge <- ifelse(
   is.na(refs$details) == FALSE & nchar(refs$details) > 0,
   sprintf(
-    '<a href="%s" target="_blank" style="margin-left:0.8em; color:#fff; background:%s; font-size:0.75em; font-weight:bold; padding:0.15em 0.45em; border-radius:3px; text-decoration:none; vertical-align:middle;">Details</a>',
+    '<a href="%s" target="_blank" style="margin-left:0.0em; color:#fff; background:%s; font-size:0.75em; font-weight:bold; padding:0.15em 0.45em; border-radius:3px; text-decoration:none; vertical-align:middle;">Details</a>',
     refs$details, accent
   ),
   ""
 )
 
 refs$reference <- sprintf(
-  '<div style="font-weight:bold; margin-bottom:0.3em;">%s</div><div style="color:#555; font-size:0.9em; margin-bottom:0.2em;">%s</div><div style="color:#777; font-size:0.85em;">%s</div><div style="margin-top:0.4em;">%s%s%s%s%s</div>',
+  '<div style="font-weight:bold; margin-bottom:0.3em;">%s</div><div style="opacity:0.8; font-size:0.9em; margin-bottom:0.2em;">%s</div><div style="opacity:0.8; font-size:0.85em;">%s</div><div style="margin-top:0.4em; display:flex; align-items:center; gap:0.6em;">%s%s%s%s%s</div>',
   refs$title, author_fmt, venue,
   doi_badge, pubmed_badge, scholar_badge, pdf_badge, details_badge
 )
