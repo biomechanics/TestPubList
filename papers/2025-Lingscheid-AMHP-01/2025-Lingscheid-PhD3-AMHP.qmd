@@ -1,0 +1,105 @@
+---
+title: "Menschen in schnellen Maschinen fliegen durch den Himmel und haben Halsschmerzen"
+subtitle: "Hier der Subtitle des Beitrags"
+date: "2025-12-12"
+categories: [paper, aviation, defense, cervical spine, human factors,air force, military, fighter jet]
+image: "assets-posts/cst.png"
+doi: "10.3357/AMHP.6631.2025"
+citation:
+  type: article-journal
+  container-title: "Aerospace Medicine and Human Performance"
+  volume: "96"
+  issue: "4"
+  page: "123-135"
+  issued: "2025-04-15"
+  publisher: "Aerospace Medical Association"
+  issn: "2375-6314"
+  language: "en"
+  pmid: "12345678"
+  pmcid: "PMC1234567"
+  status: "published"
+  genre: "research article"
+  #editor:    Macht bei Buchkapiteln und Proceedings Sinn nicht bei Paper
+  #  - family: "Smith"
+  #    given: "John"
+funding: "Funded by German Research Foundation (DFG) Grant #ABC123"
+author:
+  - name: "Rene Lingscheid"
+    orcid: "0000-0000-0000-0003"
+    email: "renelingscheid@gmail.com"
+    affiliations:
+      - ref: 4
+      - ref: 1
+  - name: "Kirsten Albracht"
+    orcid: "0000-0000-0000-0003"
+    email: "albracht@fh-aachen.de"
+    affiliations:
+      - ref: 3
+  - name: "Fabian Goell"
+    orcid: "0000-0000-0000-0001"
+    email: "braunstein@dshs-koeln.de"
+    affiliations:
+      - ref: 1
+  - name: "Roland Nüsse"
+    orcid: "0000-0000-0000-0001"
+    email: "braunstein@dshs-koeln.de"
+    affiliations:
+      - ref: 2
+  - name: "Robert Rein"
+    orcid: "0000-0000-0000-0001"
+    email: "r.rein@dshs-koeln.de"
+    affiliations:
+      - ref: 1
+  - name: "Bjoern Braunstein"
+    orcid: "0000-0000-0000-0001"
+    email: "braunstein@dshs-koeln.de"
+    affiliations:
+      - ref: 1      
+
+
+
+
+affiliations:
+  - id: "1"
+    name: "German Sport University"
+    address: "Am Sportpark Müngersdorf 6, 50933 Köln, Germany"
+    url: "https://www.dshs-koeln.de"
+  - id: "2"
+    name: "German Air Force"
+    address: "ADRESS HIER REIN "
+    url: "https://www.bundeswehr.de"
+  - id: "3"
+    name: "University of Applied Science, Aachen, Germany"
+    adress: "Heinrich-Mußmann-Str. 1, 52428 Jülich, Germany"
+    url: "https://www.fh-aachen.de"
+  - id: "4"
+    name: "German Air Force"
+    address: "Hier dann Adresse"
+    url: "https://www.bundeswehr.de"
+
+keywords: "extreme environments; fast jet; head movements; human factors; human performance; military aviation; real flight."
+toc: false
+---
+
+## Abstract
+Military fast jet pilots face significant physical challenges, including high Gz accelerations during dynamic maneuvers. The objectives of this study were threefold: 1) to record pilot movements during real flights, 2) to quantify head and trunk movements under standardized Gz conditions and during basic fighter maneuvers (BFMs), and 3) to categorize compensatory strategies used to mitigate physical strain.<br>
+<br>
+A total of 20 Eurofighter pilots (mean age: 28.2 ± 1.4 yr, all men) with >500 h EF2000 flight experience participated in the study. Video footage collected during the execution of a standardized mission card, including predetermined head movements and jet parameters (5, 7, 9 Gz), and free basic fighter maneuvers were analyzed.<br>
+<br>
+During scripted high-Gz maneuvers, 38.5% of pilots prepositioned their head for the up-max movement at 9 Gz. During check six, coping strategies were applied in 35.7% (5 Gz), 30.8% (7 Gz), and 33.3% (9 Gz) of the flights. During basic fighter maneuvers, an average of 63.6 ± 32.1 head movements per session and 27.2 ± 13.7 per set were performed by the pilots. It was observed that end-range movements (e.g., check six) were associated with a greater usage of coping strategies. The most commonly included strategies were the use of support points such as canopy rails.<br>
+
+![Figure 1: Head movement patterns and coping strategies during high-Gz maneuvers](2025-Lingscheid-PhD3-AMHP-Fig1.png){width=80% fig-align="center"}
+
+<br>
+This real-flight study reveals frequent use of anticipatory head positioning and compensatory strategies under high Gz loads, especially during end-range movements. These behaviors appear to serve the purpose of reducing cervical strain and injury risk. The findings underscore the necessity for targeted training and the optimization of ergonomic design in pilot equipment.
+
+[<i class="bi bi-file-earmark-pdf-fill" style="color:orange;"></i> Download PDF](assets-posts/2025-Lingscheid-PhD3-AMHP.pdf){.btn .btn-primary target="_blank"}
+[<i class="" style="color:orange;"></i> Download BibTeX](assets-posts/2025-Lingscheid-PhD3-AMHP.pdf){.btn .btn-primary target="_blank"}
+[<i class="bi bi-file-earmark-ppt-fill" style="color:orange;"></i> Download Slides](assets-posts/2025-Lingscheid-PhD3-AMHP.pdf){.btn .btn-primary target="_blank"}
+
+## Partner logos
+![](cst.png){width=20% fig-align="center"}
+![](logo_BAAIN.png){width=18% fig-align="center"}
+![](logo_Bundeswehr.png){width=15% fig-align="center"}
+![](logo_Luftwaffe.svg){width=20% fig-align="center"}
+![](logo_Zentrum.png){width=16% fig-align="center"}

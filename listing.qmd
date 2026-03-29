@@ -1,0 +1,112 @@
+---
+title: Publications by our research team
+author: "**Dr. Bjoern Braunstein**"
+date: 2026-03-27
+format:
+  html:
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+---
+
+```{r}
+#| echo: false
+library(jsonlite)
+library(DT)
+
+refs <- fromJSON("references.json")
+accent <- "#E07B39"
+ic_col <- "#E07B39"
+
+author_fmt <- gsub(
+  "Bjoern Braunstein",
+  sprintf(
+    '<strong style="color:%s;">Bjoern Braunstein</strong> <a href="https://orcid.org/0000-0002-5173-8916" target="_blank" style="color:%s; text-decoration:none; font-size:1.0em;"><i class="ai ai-orcid"></i></a>',
+    accent, accent
+  ),
+  refs$author
+)
+
+author_fmt <- gsub(
+  "Kirsten Albracht",
+  sprintf(
+    '<strong style="color:%s;">Kirsten Albracht</strong> <a href="https://orcid.org/0000-0002-4271-2511" target="_blank" style="color:%s; text-decoration:none; font-size:1.0em;"><i class="ai ai-orcid"></i></a>',
+    accent, accent
+  ),
+  author_fmt
+)
+
+venue <- ifelse(
+  refs$type == "conference",
+  paste0(refs$conference, ", Vol. ", refs$volume, ", ", refs$editor, " [Ed.] , ", refs$publisher, " [Pub.], ", refs$location, ", Page ", refs$pages),
+  paste0("<em>", refs$journal, "</em>, Vol. ", refs$volume, ", P. ", refs$pages)
+)
+
+pubmed_badge <- ifelse(
+  is.na(refs$pubmed) == FALSE & nchar(refs$pubmed) > 0,
+  sprintf(
+    '<a href="%s" target="_blank" style="margin-left:0.6em; color:%s; font-size:1.2em;"><i class="ai ai-pubmed"></i></a>',
+    refs$pubmed, ic_col
+  ),
+  ""
+)
+
+scholar_badge <- ifelse(
+  is.na(refs$scholar) == FALSE & nchar(refs$scholar) > 0,
+  sprintf(
+    '<a href="%s" target="_blank" style="margin-left:0.6em; color:%s; font-size:1.2em;"><i class="ai ai-google-scholar"></i></a>',
+    refs$scholar, ic_col
+  ),
+  ""
+)
+
+pdf_badge <- ifelse(
+  is.na(refs$pdf) == FALSE & nchar(refs$pdf) > 0,
+  sprintf(
+    '<a href="%s" target="_blank" style="margin-left:0.8em; color:#fff; background:%s; font-size:0.75em; font-weight:bold; padding:0.15em 0.45em; border-radius:3px; text-decoration:none; vertical-align:middle;">PDF</a>',
+    refs$pdf, ic_col
+  ),
+  ""
+)
+
+doi_badge <- ifelse(
+  is.na(refs$url) == FALSE & nchar(refs$url) > 0,
+  sprintf(
+    '<a href="%s" target="_blank" style="color:%s; font-size:1.2em;"><i class="ai ai-doi"></i></a>',
+    refs$url, ic_col
+  ),
+  ""
+)
+
+details_badge <- ifelse(
+  is.na(refs$details) == FALSE & nchar(refs$details) > 0,
+  sprintf(
+    '<a href="%s" target="_blank" style="margin-left:0.8em; color:#fff; background:%s; font-size:0.75em; font-weight:bold; padding:0.15em 0.45em; border-radius:3px; text-decoration:none; vertical-align:middle;">Details</a>',
+    refs$details, accent
+  ),
+  ""
+)
+
+refs$reference <- sprintf(
+  '<div style="font-weight:bold; margin-bottom:0.3em;">%s</div><div style="color:#555; font-size:0.9em; margin-bottom:0.2em;">%s</div><div style="color:#777; font-size:0.85em;">%s</div><div style="margin-top:0.4em;">%s%s%s%s%s</div>',
+  refs$title, author_fmt, venue,
+  doi_badge, pubmed_badge, scholar_badge, pdf_badge, details_badge
+)
+
+datatable(
+  refs[, c("year", "type", "reference")],
+  escape = FALSE,
+  rownames = FALSE,
+  colnames = c("Year", "Type", "Reference"),
+  options = list(
+    pageLength = 25,
+    order = list(list(0, "desc")),
+    autoWidth = TRUE,
+    columnDefs = list(
+      list(width = "60px", targets = 0),
+      list(targets = 1, orderable = FALSE, searchable = FALSE, visible = FALSE)
+    )
+  )
+)
+```
