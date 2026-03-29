@@ -1,0 +1,17 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Publications"
+  description: "Publication list by Dr. Bjoern Braunstein"
+  repo-url: https://github.com/yourusername/TestPubList
+  repo-actions: [issue]
+
+format:
+  html:
+    theme: cosmo
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
