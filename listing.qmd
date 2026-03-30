@@ -40,7 +40,7 @@ author_fmt <- gsub(
 venue <- ifelse(
   refs$type == "conference",
   paste0(refs$conference, ", Vol. ", refs$volume, ", ", refs$editor, " [Ed.] , ", refs$publisher, " [Pub.], ", refs$location, ", Page ", refs$pages),
-  paste0("<em>", refs$journal, "</em>, Vol. ", refs$volume, ", P. ", refs$pages)
+  paste0("<em>", refs$journal, "</em>, Vol. ", refs$volume, ", No. ", refs$issue, ", P. ", refs$pages)
 )
 
 pubmed_badge <- ifelse(
