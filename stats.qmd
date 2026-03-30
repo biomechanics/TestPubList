@@ -1,0 +1,42 @@
+---
+title: "Stats Demo"
+format: html
+---
+
+```{r}
+#| echo: false
+library(jsonlite)
+library(htmltools)
+
+refs <- fromJSON("references.json")
+accent <- "#E07B39"
+
+n_total   <- nrow(refs)
+n_journal <- sum(refs$type == "journal")
+n_conf    <- sum(refs$type == "conference")
+n_awards  <- sum(!is.na(refs$award) & nchar(refs$award) > 0)
+yr_min    <- min(as.integer(refs$year))
+yr_max    <- max(as.integer(refs$year))
+
+HTML(sprintf(
+  '<div style="margin:0.5em 0 1.2em 0; padding:0.6em 1em;
+               background:#f9f9f9; border-left:3px solid %s;
+               font-size:0.9em; color:#444;">
+     <strong style="color:%s;">%d</strong> publications
+     &nbsp;·&nbsp;
+     <strong style="color:%s;">%d</strong> journal articles
+     &nbsp;·&nbsp;
+     <strong style="color:%s;">%d</strong> conference papers
+     &nbsp;·&nbsp;
+     &#127942; <strong style="color:%s;">%d</strong> awards
+     &nbsp;·&nbsp;
+     %d – %d
+   </div>',
+  accent,
+  accent, n_total,
+  accent, n_journal,
+  accent, n_conf,
+  accent, n_awards,
+  yr_min, yr_max
+))
+```
