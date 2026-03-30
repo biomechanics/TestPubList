@@ -1,5 +1,5 @@
 ---
-title: Publications by our research team
+title: Publications by research team members
 author: "**Dr. Bjoern Braunstein**"
 date: 2026-03-27
 format:
