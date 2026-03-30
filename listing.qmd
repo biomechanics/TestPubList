@@ -10,6 +10,11 @@ format:
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 ---
 
+
+
+
+
+
 ```{r}
 #| echo: false
 library(jsonlite)
@@ -19,6 +24,8 @@ library(htmltools)
 refs <- list.files("json", pattern = "\\.json$", full.names = TRUE) |>
   lapply(fromJSON) |>
   dplyr::bind_rows()
+
+saveRDS(refs, "refs.rds") # Save as RDS for faster loading in other scripts
 
 
 accent <- "#E07B39"
