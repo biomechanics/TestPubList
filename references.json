@@ -175,8 +175,8 @@
     "year": "2025",
     "volume": "",
     "pages": "1",
-    "editor": "",
-    "publisher": "",
+    "editor": "Neil Cronin, Taija Juutinen, Jonas Rubenson, Taylor Dick, Huub Maas",
+    "publisher": "CNB-Scientific-Board",
     "location": "Helsinki, Finland",
     "doi": "",
     "url": "",
@@ -185,5 +185,23 @@
     "pdf": "pdf/luciano2025-cnb.pdf",
     "details": "",
     "award": "Early Career Award by Journal of Experimental Biology"
+  },
+  {
+    "id": "Richter2017",
+    "type": "journal",
+    "title": "Human Biomechanical and Cardiopulmonary Responses to Partial Gravity - A Systematic Review",
+    "author": "Charlotte Richter, Bjoern Braunstein, Andrew Winnard, Mona Nasser, Tobias Weber",
+    "journal": "Frontiers in Physiology",
+    "year": "2017",
+    "volume": "8",
+    "issue": "583",
+    "pages": "1-22",
+    "doi": "10.3389/fphys.2017.00583",
+    "url": "https://doi.org/10.3389/fphys.2017.00583",
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/28860998/",
+    "scholar": "https://scholar.google.com/scholar?hl=de&as_sdt=0%2C5&q=Human+Biomechanical+and+Cardiopulmonary+Responses+to+Partial+Gravity+Systematic+Review+Richter+Braunstein&btnG=",
+    "pdf": "pdf/richter2017.pdf",
+    "details": "",
+    "award": "Best Master Thesis in Life Sciences 2018 by German Sport University"
   }
 ]
