@@ -146,5 +146,24 @@
     "scholar": "https://scholar.google.com/scholar?hl=de&as_sdt=0%2C5&q=High%2B+Gz+Flight+Reduces+Cervical+3D+Kinematics+and+Increases+Neck+Pain+in+Fighter+Pilots&btnG=",
     "pdf": "",
     "details": ""
+  },
+  {
+    "id": "Luciano2025",
+    "type": "conference",
+    "title": "Bouncing on the Moon: joint power during walking, running, and skipping in emulated low gravity",
+    "author": "Francesco Luciano, James Cowburn, Valentina Natalucci, Dario Cazzola, Steffi Colyer, Kirsten Albracht, Bjoern Braunstein, Verena Schuengel, Jörn Rittweger, Nolan Herssens, Tobias Weber, Dave Green, Dominic Farris, Alberto E. Minetti, Gaspare Pavei",
+    "conference": "International Society of Biomechanics (ISB)",
+    "year": "2025",
+    "volume": "30",
+    "pages": "1",
+    "editor": "Toni Arndt, Lanie Gutierrez-Farewik, Li Felländer-Tsai, Joakim Holmberg",
+    "publisher": "MeetX",
+    "location": "Stockholm, Sweden",
+    "doi": "",
+    "url": "",
+    "pubmed": "",
+    "scholar": "",
+    "pdf": "pdf/luciano2025-isb.pdf",
+    "details": ""
   }
 ]
