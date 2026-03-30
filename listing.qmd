@@ -105,7 +105,8 @@ datatable(
     autoWidth = TRUE,
     columnDefs = list(
       list(width = "60px", targets = 0),
-      list(targets = 1, orderable = FALSE, searchable = FALSE, visible = FALSE)
+      list(targets = 1, orderable = FALSE, searchable = FALSE, visible = FALSE),
+      list(targets = 2, orderable = FALSE)
     )
   )
 )

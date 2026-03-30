@@ -9,6 +9,8 @@ website:
   description: "Publication list by Dr. Bjoern Braunstein"
   repo-url: https://github.com/yourusername/TestPubList
   repo-actions: [issue]
+  #repo-actions: "Created with Love and Quarto by Mno2"
+ 
 
 format:
   html:

@@ -114,5 +114,37 @@
     "pubmed": "",
     "scholar": "https://scholar.google.com/scholar?hl=de&as_sdt=0%2C5&q=Integrative+biomechanics+of+a+human–robot+carrying+task%3A+implications+for+future+collaborative+work&btnG=",
     "pdf": "pdf/schuengel2025.pdf"
+  },
+  {
+    "id": "Goell2026",
+    "type": "journal",
+    "title": "Human–human and human–robot co–manipulation: A biomechanical analysis of a joint carrying task",
+    "author": "Fabian Goell, Bjoern Braunstein, Jule Heieis, Daniel Braun, Nadine Reißner, Kirill Safronov, Christian Weiser, Verena Schuengel, Kirsten Albracht",
+    "journal": "Robotics and Autonomous Systems",
+    "year": "2026",
+    "volume": "199",
+    "issue": "105360",
+    "pages": "1-10",
+    "doi": "10.1016/j.robot.2026.105360",
+    "url": "https://doi.org/10.1016/j.robot.2026.105360",
+    "pubmed": "",
+    "scholar": "https://scholar.google.com/scholar?hl=de&as_sdt=0%2C5&q=Human–human+and+human–robot+co–manipulation%3A+A+biomechanical+analysis+of+a+joint+carrying+task&btnG="
+  },
+  {
+    "id": "Lingscheid2026",
+    "type": "journal",
+    "title": "High +Gz Flight Reduces Cervical 3D Kinematics and Increases Neck Pain in Fighter Pilots",
+    "author": "Rene Lingscheid, Roland Nuesse, Robert Rein, Fabian Goell, Kirsten Albracht, Bjoern Braunstein",
+    "journal": "Aerospace Medicine and Human Performance",
+    "year": "2026",
+    "volume": "97",
+    "issue": "3",
+    "pages": "151-159",
+    "doi": "10.3357/AMHP.6762.2026",
+    "url": "https://doi.org/10.3357/AMHP.6762.2026",
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41698662/",
+    "scholar": "https://scholar.google.com/scholar?hl=de&as_sdt=0%2C5&q=High%2B+Gz+Flight+Reduces+Cervical+3D+Kinematics+and+Increases+Neck+Pain+in+Fighter+Pilots&btnG=",
+    "pdf": "",
+    "details": ""
   }
 ]
