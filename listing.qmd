@@ -14,8 +14,13 @@ format:
 #| echo: false
 library(jsonlite)
 library(DT)
+library(htmltools)
 
-refs <- fromJSON("references.json")
+refs <- list.files("json", pattern = "\\.json$", full.names = TRUE) |>
+  lapply(fromJSON) |>
+  dplyr::bind_rows()
+
+
 accent <- "#E07B39"
 ic_col <- "#E07B39"
 
