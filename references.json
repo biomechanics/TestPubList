@@ -13,7 +13,8 @@
     "url": "https://doi.org/10.1080/14763141.2026.2648282",
     "pubmed": "https://pubmed.ncbi.nlm.nih.gov/41889358",
     "scholar": "https://scholar.google.com/scholar?q=Advancing+the+concept+of+technical+ability+of+force+application",
-    "pdf": "pdf/test.pdf"
+    "pdf": "pdf/test.pdf",
+    "award": ""
   },
   {
     "id": "Braunstein2010",
@@ -29,7 +30,8 @@
     "url": "https://doi.org/10.1016/j.jbiomech.2010.04.007",
     "pubmed": "https://pubmed.ncbi.nlm.nih.gov/20462583/",
     "scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=de&user=JlfvIxAAAAAJ&citation_for_view=JlfvIxAAAAAJ:u5HHmVD_uO8C",
-    "pdf": ""
+    "pdf": "",
+    "award": ""
   },
   {
     "id": "Karamanidis2011",
@@ -292,6 +294,24 @@
     "scholar": "https://scholar.google.com/scholar?hl=de&as_sdt=0%2C5&q=Factors+that+influence+the+angular+error+in+active+knee+angle+reproduction+tests+Wieber+Braunstein&btnG=",
     "pdf": "pdf/wieber2024-review.pdf",
     "details": "",
+    "award": ""
+  },
+  {
+    "id": "Wieber2025",
+    "type": "journal",
+    "title": "Knee angle reproduction tests: influences of body orientation, movement direction and limb dominance",
+    "author": "Juliane Wieber, Abigail Preece, Robert Rein, Bjoern Braunstein",
+    "journal": "International Journal of Sports Medicine",
+    "year": "2025",
+    "volume": "46",
+    "issue": "6",
+    "pages": "422-429",
+    "doi": "10.1055/a-2526-9372",
+    "url": "https://doi.org/10.1055/a-2526-9372",
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/39978350",
+    "scholar": "",
+    "pdf": "",
+    "details":"",
     "award": ""
   }
 ]
