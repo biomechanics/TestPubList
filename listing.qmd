@@ -88,10 +88,19 @@ details_badge <- ifelse(
   ""
 )
 
+award_badge <- ifelse(
+  is.na(refs$award) == FALSE & nchar(refs$award) > 0,
+  sprintf(
+    '<span title="%s" style="font-size:1.2em; cursor:default;">🏆</span>',
+    refs$award
+  ),
+  ""
+)
+
 refs$reference <- sprintf(
-  '<div style="font-weight:bold; margin-bottom:0.3em;">%s</div><div style="opacity:0.8; font-size:0.9em; margin-bottom:0.2em;">%s</div><div style="opacity:0.8; font-size:0.85em;">%s</div><div style="margin-top:0.4em; display:flex; align-items:center; gap:0.6em;">%s%s%s%s%s</div>',
+  '<div style="font-weight:bold; margin-bottom:0.3em;">%s</div><div style="opacity:0.8; font-size:0.9em; margin-bottom:0.2em;">%s</div><div style="opacity:0.8; font-size:0.85em;">%s</div><div style="margin-top:0.4em; display:flex; align-items:center; gap:0.6em;">%s%s%s%s%s%s</div>',
   refs$title, author_fmt, venue,
-  doi_badge, pubmed_badge, scholar_badge, pdf_badge, details_badge
+  doi_badge, pubmed_badge, scholar_badge, pdf_badge, details_badge, award_badge
 )
 
 datatable(
