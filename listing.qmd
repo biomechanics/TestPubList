@@ -116,7 +116,7 @@ datatable(
   rownames = FALSE,
   colnames = c("Year", "Type", "Reference"),
   options = list(
-    pageLength = 25,
+    pageLength = 50,
     order = list(list(0, "desc")),
     autoWidth = TRUE,
     columnDefs = list(
