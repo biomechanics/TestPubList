@@ -5,10 +5,17 @@ format: html
 
 ```{r}
 #| echo: false
+#| message: false
+#| warning: false
+#| results: "asis"
 library(jsonlite)
+library(dplyr)
 library(htmltools)
 
-refs <- fromJSON("references.json")
+refs <- list.files("json", pattern = "\\.json$", full.names = TRUE) |>
+  lapply(fromJSON) |>
+  dplyr::bind_rows()
+
 accent <- "#E07B39"
 
 n_total   <- nrow(refs)
