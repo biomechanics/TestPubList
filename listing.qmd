@@ -1,7 +1,7 @@
 ---
 title: Publications by research team members
 author: "**Dr. Bjoern Braunstein**"
-date: 2026-03-27
+date: today
 format:
   html:
     include-in-header:
@@ -115,7 +115,10 @@ datatable(
   escape = FALSE,
   rownames = FALSE,
   colnames = c("Year", "Type", "Reference"),
+  extensions = "Buttons", # Ausschalten wenn der PRINT Button nicht benötigt wird.
   options = list(
+    dom = "Bfrtip", # Ausschalten wenn der PRINT Button nicht benötigt wird.
+    buttons = list("print"), # Ausschalten wenn der PRINT Button nicht benötigt wird.
     pageLength = 50,
     order = list(list(0, "desc")),
     autoWidth = TRUE,
